@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: #FFF4E0;
+  color: #4D4D4D;
+}
+#ttl_text{
+  text-align: center;
+ text-transform: capitalize;
+ font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: -2px -2px 20px #ECD2A5;
+}
+img{
+  width: 90vw;
+  height: auto;
+}
+/* Center p text on desktop screens */
+@media (min-width: 768px) { /* Adjust breakpoint as needed */
+  img{
+    align-self: center;
+    width: 17vw;
+    height: auto;
+  }
+}

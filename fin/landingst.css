@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: #000000;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: #FFF4E0;
+  color: #4D4D4D;
+}
+#ttl_text{
+  text-align: center;
+ text-transform: capitalize;
+ font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: -2px -2px 20px #ECD2A5;
+}
+h2:first-letter{
+  font-size: 47px;
+  font-weight: 450;
+}
+#btnsi{
+  /*align-self:center;
+  margin-left: 13vw;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button{
+  padding: 13px 26px;
+  border-radius: 7%;
+  margin:0px 7px 13px 0px;
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#yep{
+  position: relative;
+  margin-right: 15px;
+  background-color: #FFBF9B;
+  border:1px double #FF8A49;
+  box-shadow: 2px 2px 0 0 white,
+  4px 4px 0 0 #FF8A49;
+  transition-duration: 200ms;
+}
+#yep:hover{
+  box-shadow: 3px 3px 0 0 white,
+  6px 6px 0 0 #FF8A49;
+  transform: translate(-2, -2);
+}
+#nope{
+  position: relative;
+  background-color: #B46060;
+  border:1px double #E34E4E;
+  box-shadow: 2px 2px 0 0 white,
+  4px 4px 0 0 #E34E4E;
+  transition-duration: 200ms;
+}
+#nope:hover {
+  box-shadow: 3px 3px 0 0 white,
+    6px 6px 0 0 #E34E4E;
+  transform: translate(-2, -2);
+}
+#gift{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+p{
+  letter-spacing:0.5px;
+  white-space: normal;
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-wrap: balance;
+  margin-left: 2vw;
+}
+img{
+  width: 45vh;
+  height: auto;
+  
+}
+.btn-up{
+  display: flex;
+  justify-content: center;
+}
+/* Center p text on desktop screens */
+@media (min-width: 768px) { /* Adjust breakpoint as needed */
+  p {
+    text-align: center;
+  }
+  img{
+    align-self: center;
+    width: 17vw;
+    height: auto;
+  }
+}
